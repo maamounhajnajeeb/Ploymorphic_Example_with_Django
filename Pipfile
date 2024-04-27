@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==4.2"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+server = 'python manage.py runserver'
+app = 'python manage.py startapp'
+migrations = 'python manage.py makemigrations'
+migrate = 'python manage.py migrate'
+djshell = 'python manage.py shell'
